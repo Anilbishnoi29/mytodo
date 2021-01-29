@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Todo list</title>
+</head>
+
+<body>
+    <section id="todo-main">
+        <header>
+            <div class="container">
+                <div class="todo-logo">
+                    <a href="#">todos</a>
+                </div>
+                <div class="todo-search">
+                    <input id="searchTxt" type="text" placeholder="find your todo">
+                    <button type="submit"><span>Search</span></button>
+                </div>
+            </div>
+        </header>
+
+        <section id="todo-card">
+            <div class="todo-card-input">
+                <input id="addtaskinput" type="text" placeholder="list your todos">
+                <input id="savetaskinput" type="hidden" placeholder="list your todos">
+                <div class="todo-buttons">
+                    <button id="addbtnTask"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <button id="savebtnTask" style="display: none;"> <i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                    <button id="deletebtnAllTask"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <!-- notes -->
+
+
+            <div id="notes" class="your-notes">
+
+            </div>
+        </section>
+    </section>
+
+</body>
+
+
+<script src="js/todo-script.js"></script>
+
+</html>
