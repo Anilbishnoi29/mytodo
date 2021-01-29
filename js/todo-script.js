@@ -122,6 +122,27 @@ deletebtnAllTask.addEventListener("click", function(index) {
     addtaskinput.value = '';
     showtask();
 
-})
+});
+
 
 // searchtextbox
+let search = document.getElementById("searchTxt");
+search.addEventListener("input", function() {
+    let inputVal = search.value.toLowerCase();
+    let noteCard = document.getElementsByClassName('card-todos');
+    Array.from(noteCard).forEach(function(element) {
+        let cardTxt = element.getElementsByTagName("p")[0].innerText;
+        // console.log(cardTxt);
+        if (cardTxt.includes(inputVal)) {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    })
+})
+
+
+
+setTimeout(function() {
+    $('#splash-overlay').fadeOut('fast');
+}, 3500); // <-- time in milliseconds

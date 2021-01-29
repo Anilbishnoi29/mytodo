@@ -9,41 +9,45 @@
     <title>Todo list</title>
 </head>
 
-<body>
-    <section id="todo-main">
-        <header>
-            <div class="container">
-                <div class="todo-logo">
-                    <a href="#">todos</a>
+<body class="welcome">
+    <span id="splash-overlay" class="splash"></span>
+    <span id="welcome" class="z-depth-4"></span>
+    <div class="main-content">
+        <section id="todo-main">
+            <header>
+                <div class="container">
+                    <div class="todo-logo">
+                        <a href="#">todos</a>
+                    </div>
+                    <div class="todo-search">
+                        <input id="searchTxt" type="text" placeholder="find your todo">
+                        <button type="submit"><span>Search</span></button>
+                    </div>
                 </div>
-                <div class="todo-search">
-                    <input id="searchTxt" type="text" placeholder="find your todo">
-                    <button type="submit"><span>Search</span></button>
+            </header>
+
+            <section id="todo-card">
+                <div class="todo-card-input">
+                    <input id="addtaskinput" type="text" placeholder="list your todos">
+                    <input id="savetaskinput" type="hidden" placeholder="list your todos">
+                    <div class="todo-buttons">
+                        <button id="addbtnTask"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                        <button id="savebtnTask" style="display: none;"> <i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                        <button id="deletebtnAllTask"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                    </div>
                 </div>
-            </div>
-        </header>
+                <!-- notes -->
 
-        <section id="todo-card">
-            <div class="todo-card-input">
-                <input id="addtaskinput" type="text" placeholder="list your todos">
-                <input id="savetaskinput" type="hidden" placeholder="list your todos">
-                <div class="todo-buttons">
-                    <button id="addbtnTask"><i class="fa fa-plus" aria-hidden="true"></i></button>
-                    <button id="savebtnTask" style="display: none;"> <i class="fa fa-floppy-o" aria-hidden="true"></i></button>
-                    <button id="deletebtnAllTask"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+
+                <div id="notes" class="your-notes">
+
                 </div>
-            </div>
-            <!-- notes -->
-
-
-            <div id="notes" class="your-notes">
-
-            </div>
+            </section>
         </section>
-    </section>
-
+    </div>
 </body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <script src="js/todo-script.js"></script>
 
