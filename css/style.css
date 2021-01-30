@@ -267,7 +267,7 @@
                 background: #006399;
             }
             
-            #notes .card-todos button:last-child {
+            
                 background: #c0392b;
             }
             
@@ -281,7 +281,4 @@
                 #todo-card .todo-card-input .todo-buttons {
                     margin-top: 1rem;
                 }
-                #todo-card {
-                    margin-top: 2.2rem;
                 }
-            }
