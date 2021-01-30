@@ -53,7 +53,6 @@ function showtask() {
             <button id="delete-task"  onclick="deletetask(${index})"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
             </div>
             </div>
-            
             <p>${item}</p>
         </div>
     </div>`;
@@ -63,6 +62,7 @@ function showtask() {
     addtasklist.innerHTML = html;
 
 }
+
 
 // edittask
 function edittask(index) {
@@ -146,3 +146,14 @@ search.addEventListener("input", function() {
 setTimeout(function() {
     $('#splash-overlay').fadeOut('fast');
 }, 3500); // <-- time in milliseconds
+
+
+
+function myFunction() {
+    var x = document.getElementsByClassName("username");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
