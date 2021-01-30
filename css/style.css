@@ -273,9 +273,6 @@
                 #todo-card {
                     margin-top: 2.2rem;
                 }
-                .body-bg-todos::after {
-                    content: "todos";
-                    font-size: 7rem;
-                }
+                
             }
             /* /////////////////////////////////////// */
