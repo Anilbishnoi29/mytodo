@@ -140,20 +140,3 @@ search.addEventListener("input", function() {
         }
     })
 })
-
-
-
-setTimeout(function() {
-    $('#splash-overlay').fadeOut('fast');
-}, 3500); // <-- time in milliseconds
-
-
-
-function myFunction() {
-    var x = document.getElementsByClassName("username");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
